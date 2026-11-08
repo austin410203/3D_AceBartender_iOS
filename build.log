@@ -1,0 +1,810 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild -project AceBartender.xcodeproj -scheme AceBartender -configuration Debug -sdk iphonesimulator -destination "generic/platform=iOS Simulator" -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphonesimulator26.2
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'AceBartender' in project 'AceBartender' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 4290bd4d2849e7e4d62d3197de4da1e0
+Build description path: /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/XCBuildData/4290bd4d2849e7e4d62d3197de4da1e0.xcbuilddata
+CreateBuildDirectory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/AceBartender.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products
+
+CreateBuildDirectory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/AceBartender.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex
+
+ClangStatCache /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/SDKStatCaches.noindex/iphonesimulator26.2-23C57-dc75598d0054f22ec865fa860f139d72e244bd9a5feaf902f95f61bf06266e52.sdkstatcache
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/AceBartender.xcodeproj
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -o /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/SDKStatCaches.noindex/iphonesimulator26.2-23C57-dc75598d0054f22ec865fa860f139d72e244bd9a5feaf902f95f61bf06266e52.sdkstatcache
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender-4c8c1616db49e287085ac9d951e7a27b-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/AceBartender.xcodeproj
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender-4c8c1616db49e287085ac9d951e7a27b-VFS-iphonesimulator/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/AceBartender.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/AceBartender.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/AceBartender.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/AceBartender.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender_const_extract_protocols.json (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.SwiftFileList (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.SwiftConstValuesFileList (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.LinkFileList (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-OutputFileMap.json (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender_const_extract_protocols.json (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.SwiftFileList (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.SwiftConstValuesFileList (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.LinkFileList (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-OutputFileMap.json (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender.hmap (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender.DependencyStaticMetadataFileList (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender.DependencyMetadataFileList (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-project-headers.hmap (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-own-target-headers.hmap (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-generated-files.hmap (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-target-headers.hmap (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-non-framework-target-headers.hmap (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibPath-normal-x86_64.txt (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibPath-normal-x86_64.txt
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibPath-normal-arm64.txt (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibInstallName-normal-x86_64.txt (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibInstallName-normal-x86_64.txt
+
+WriteAuxiliaryFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibInstallName-normal-arm64.txt (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    write-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibInstallName-normal-arm64.txt
+
+MkDir /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /bin/mkdir -p /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app
+
+Ld /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/__preview.dylib normal x86_64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -O0 -L/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -install_name @rpath/AceBartender.debug.dylib -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender_dependency_info.dat -o /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/__preview.dylib
+
+Ld /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/__preview.dylib normal arm64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -O0 -L/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -install_name @rpath/AceBartender.debug.dylib -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender_dependency_info.dat -o /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/__preview.dylib
+
+MkDir /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/unthinned (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /bin/mkdir -p /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/unthinned
+
+MkDir /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/thinned (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /bin/mkdir -p /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/thinned
+
+GenerateAssetSymbols /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Assets.xcassets (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Assets.xcassets --compile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_dependencies --output-partial-info-plist /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_generated_info.plist --app-icon AppIcon --compress-pngs --enable-on-demand-resources YES --development-region zh-Hant --target-device iphone --minimum-deployment-target 17.0 --platform iphonesimulator --bundle-identifier com.austin410203.acebartender --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CpResource /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/PrivacyInfo.xcprivacy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/PrivacyInfo.xcprivacy (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/PrivacyInfo.xcprivacy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app
+
+CreateUniversalBinary /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/__preview.dylib normal arm64\ x86_64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/__preview.dylib /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/__preview.dylib -output /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/__preview.dylib
+
+CpResource /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Images /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Images (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Images /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app
+
+CpResource /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Data /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Data (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Data /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app
+
+CopyStringsFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/zh-Hant.lproj/InfoPlist.strings /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/zh-Hant.lproj/InfoPlist.strings (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/zh-Hant.lproj -- /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/zh-Hant.lproj/InfoPlist.strings
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/zh-Hant.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'AceBartender' from project 'AceBartender')
+
+CopyStringsFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/ko.lproj/InfoPlist.strings /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/ko.lproj/InfoPlist.strings (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/ko.lproj -- /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/ko.lproj/InfoPlist.strings
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/ko.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'AceBartender' from project 'AceBartender')
+
+CopyStringsFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/ja.lproj/InfoPlist.strings /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/ja.lproj/InfoPlist.strings (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/ja.lproj -- /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/ja.lproj/InfoPlist.strings
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/ja.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'AceBartender' from project 'AceBartender')
+
+CopyStringsFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/es.lproj/InfoPlist.strings /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/es.lproj/InfoPlist.strings (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/es.lproj -- /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/es.lproj/InfoPlist.strings
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/es.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'AceBartender' from project 'AceBartender')
+
+CopyStringsFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/en.lproj/InfoPlist.strings /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/en.lproj/InfoPlist.strings (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/en.lproj -- /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/en.lproj/InfoPlist.strings
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Loc/en.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'AceBartender' from project 'AceBartender')
+
+CompileAssetCatalogVariant thinned /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Assets.xcassets (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Assets.xcassets --compile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --compress-pngs --enable-on-demand-resources YES --development-region zh-Hant --target-device iphone --minimum-deployment-target 17.0 --platform iphonesimulator
+/* com.apple.actool.compilation-results */
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_generated_info.plist_thinned
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/thinned/AppIcon60x60@2x.png
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/thinned/AppIcon76x76@2x~ipad.png
+/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/thinned/Assets.car
+
+
+SwiftDriver AceBartender normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-SwiftDriver -- /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AceBartender -Onone -enforce-exclusivity\=checked @/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/SDKStatCaches.noindex/iphonesimulator26.2-23C57-dc75598d0054f22ec865fa860f139d72e244bd9a5feaf902f95f61bf06266e52.sdkstatcache -output-file-map /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-generated-files.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-project-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-Swift.h -working-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver AceBartender normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-SwiftDriver -- /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AceBartender -Onone -enforce-exclusivity\=checked @/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/SDKStatCaches.noindex/iphonesimulator26.2-23C57-dc75598d0054f22ec865fa860f139d72e244bd9a5feaf902f95f61bf06266e52.sdkstatcache -output-file-map /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-generated-files.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-project-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources-normal/x86_64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/x86_64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-Swift.h -working-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_SwiftConcurrencyShims-DR7TR245BHVJD9SXSP33ISKWL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stdarg-ULO405TYATINN5BQ5SA2YYY0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/ptrauth-2GKBP2ZWC1N98B05U8Z0CMB29.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_AvailabilityInternal-DZ56SZ6NCURODV2JNC7BFA14I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/SwiftShims-DO1XVJ48SWBYL2MOY2PXNOGTQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/DeveloperToolsSupport-34H6QDQJS4N4SN01K8Z7NVPPG.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/SwiftShims-EW7AYSQSVDTYQ7GAJACZWYUBH.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_float-5LUEZ298S0N12UI95EQ9PYLD9.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/ptrauth-8ONZ6F2HJ4UTY6IFO7B74497.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stddef-1KRRV2QIH9W84U75L9IGOAR1E.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stddef-C3CP57SLFEA3WY1CPOLPLRJ5J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/ptrcheck-EA6FA2U10WXD9MMNFPUF6RH2R.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_AvailabilityInternal-2Q64VM78LL4UXPYPHDM7B8G8N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stdarg-7XE3M4W4EMJU65W3URIJ3K6VO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_DarwinFoundation1-3JH4889QYWMHDTLSHEHTF3M0R.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/DeveloperToolsSupport-B5J2OZQRWWWJDXFC1ZR5DBTJ5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stdbool-M9GWFJ1Z5PM2O8GYVGRH6NJF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_SwiftConcurrencyShims-D0OAM2UIXG5EULZCS1VKPVUP1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_limits-32EXGBM4683D8FL8OF5W6NU4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_DarwinFoundation2-2K5KNG61D9XWZV0KO052N3TN2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_float-4IW069P5SZ9RWZDBPISBZWGJI.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/ptrcheck-CCINDVBKUNEODLO4SH95TSHV0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stdbool-BW116KLD7JV10F2L43YEU8W8B.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_DarwinFoundation1-23D3PVQVHM7DO8JDIC5E820CE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/sys_types-64MJQSDK4TGGG6ZU1D8B0I8K7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stdint-444RMHE1RZARMTABPE6U7TXNV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_limits-B3BZL5U9V9HXZP4VZU3SPX5S4.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_DarwinFoundation2-17UJIFOFP325BJN0ODWKYA94S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_tgmath-AB8VV7UC1V3UUGDENJMURTOKQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stdatomic-L942V07YBCJD6Q8869VXVTKF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_intrinsics-1YF992U8U4786EBKSWP2G5YT1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/sys_types-9D2TDOPV733OAYICNAAGV2YVA.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stdint-DHIFLQW5EKDADHRGOLLYHSSU2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_tgmath-379VG4BCK79P0PQASTODTZ56F.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_stdatomic-DTEHOECYMTECSGQ9MDRUG6HZV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_DarwinFoundation3-V7Z8PF0KZ8UTDFZX82F7JXHG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_DarwinFoundation3-FEQ6EI4FZ5BIUHLB6BIHLTMH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/simd-AOTU537PHS4Q5VEYY9E3K4FMB.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_inttypes-AZKJSKA6JCJ8TC07AERC3W95H.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_intrinsics-9DWLXVT20CH13ZTKREBFTMMC5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Darwin-8CJPC7J3HO9TKIFSP0JZ7WGUN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/simd-C4ALYOXXV92IFA4VB0187RXP0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Spatial-1TBPU2NWG0CCK338NAZRWS8E1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/MachO-874QXR3I205QU573KMDCYARK3.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Spatial-86HDCE28M2CF6D9FOCE1BA7Y6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/ObjectiveC-AN9SVJBDDEH5NTV99XETG2Q0V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/_Builtin_inttypes-8I2DENHTQIBZ1ZXT1EGSL1KQ6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/os_object-644RWUR446KV6AUUXL5X0O7E6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Darwin-BK0HVVCDHOZ1J815MVR3O81ST.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/os_workgroup-4P8M11MEI7O0EAKE2L65FHVX5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Dispatch-AV9NVQTXD3MDI0K91WPOY6L2Y.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/dnssd-5X613MRIH20PC5V4YYLGGJ1CM.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreFoundation-54BO2E04CP7N5W14XQIGLF0WA.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/XPC-1DDOFOLFY5MKUAXUW13AHIHRA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/ObjectiveC-9ZHMN01712LLUDW47E6FT3NYM.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreGraphics-BTMLGPAFPSCAXMXW55UZNJ861.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/MachO-AD7BZ4Q86NL5DUFAM58MP0BYH.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/os-52L3P8O3MMQK04EY9QL2I5D7I.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreAudioTypes-5L7C8HFIN6F8Y0RFQT28MD39X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/os_object-6S6C498SRM09GP9QBH8ZINO4L.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/ImageIO-1Y7TQRKBWNHARCSZ7K4F6C17D.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreAudio-VJVCY2TEK1QAQELPB7IEF5D1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/os_workgroup-F4B2TCIYTE60QBTSC0BTIVNRU.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Security-4R0XKMWUVPGM74CGFW16BAZLP.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreText-3RPKRTGB4PA28Z2CY9A1THI9X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Dispatch-6AU4E2ZWMCEZ92SRLZONSBPFO.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CFNetwork-BEH0JVYGDPLTTQ5I5L8CQ0LI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/dnssd-2BMAY67YA84GZ85ZXX9GHIXI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/XPC-C1PF5NBKRDGUCYIJT2S5ZFNR3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreFoundation-D1NE3INGMYDK65RSYZEXE0JEV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Foundation-5JQIDYK9BQTJJAQF2ZWH7O486.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/os-8TOQVJ6DWZAUIRIX5NTG0IS3Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreGraphics-CDMAZUWINALCLEDUCJ4RFZBPJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreAudioTypes-2LFVID6LGXP49DEVTPIT4X89J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/ImageIO-99VMBX7C6CR090PSLB3NPM6DH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreAudio-5KR37IMJB5BD59FV3KO8XOBVE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/UserNotifications-7213LJ32N7LQ6YN6WQIUBDTYE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/FileProvider-4V7KSYZAI6ECEN0AJ3X2IHC3K.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/JavaScriptCore-8LTTTT7EOM98ZV6NLQ6GQIDW8.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreData-2EABFZS6T3GI13KU4VMZDAFNR.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/UIUtilities-43ZSWLK6M269MSSGGKV2MN070.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Network-7YAADHT6Z8WJ1XHFN98ZYBAWF.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/UniformTypeIdentifiers-CKLT6L09WPEBR6GYAMGEGGYA0.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Symbols-1AT8LGES1N5B7WGV14OISPYTZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/OSLog-333TFWO3Q0C85MO9B97OX4UBH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreText-55S6QXXMZXRBD3QWRY3DCOTR6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/OpenGLES-E32MEPOEQ2ZWFII62LW5R4FSV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreTransferable-819GG065JE2TOPUXW27YAA34E.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/AVRouting-AVU3C81LODFZY2IKWKJS763QJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CFNetwork-C85XEPVS112MQXXDB7RGIMTKE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/DataDetection-BB6JG8T2Q1ZG72O2SZLMW18RF.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/IOSurface-DD0C6ML0STNZ6CRUZBQYW4AUN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreMIDI-4YTQXMVJS8A9JCMBC6GNEB012.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Security-7B13LBU85E52ZV0PULO640OA2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Metal-BAI3DE977WOTPLNWOXFIUYOQ5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/AudioToolbox-320FAJWHYXCIVEVTTIRCMYTJF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Foundation-4ZRI18ZPFQ9YVSKUFWDFFUADL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Accessibility-6OF0YWULHKYPLF01UU4803B5E.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreVideo-AJB8T9V7K17PKVLWNDQQNKDN5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreImage-DQFNGURYK564SPZUE9A47205E.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreMedia-C0S73A05LP84BGG3RMPXPM7UL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/QuartzCore-E0PKHW16BIUR84XV7GMX8Q44F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/OpenGLES-FUE5SIXEPDP3TRSUYCP7VZJ1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/JavaScriptCore-AJ66WRQPZ3TATNM20LDLU4UQT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/UIUtilities-EWCREH0K9PY9RJOX4PG8F8I7C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Accessibility-3R7JEITGMBZQ2I86Z9JUTD4PY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/UniformTypeIdentifiers-1U2YETBF059KX31M8OG29FQO0.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/UIKit-CJPQT37KR2FA12KWKM15U2IYF.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/MediaToolbox-9LKSMINIPN3NSEI4P3T0BV1YQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/IOSurface-1QCOCXXPOQBFL8IVJLENLKSQM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/OSLog-C9LKAUAYQG46YMQK85O2RVV2Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreMIDI-CF792JUXYE1IFGOPMZUYR8IKA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/FileProvider-85WF6VJTW9M9CD1MEB2E0GQ5Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/AudioToolbox-7D4V40U18I6270CJ6W9WYLTV8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreData-XS33R0CS6V51B1IVEGZANHS6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/AVFAudio-3937RWN6WMO5V7N158VV3E4V9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Symbols-C9IRE23JGXYSDLI6VMAFF8EC8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Metal-D8P3E5VKKE6Q0XRG92KG636KR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreTransferable-BW8HDA611PMYUKU2TAO200OZ3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Network-2KPZ13TGYFBXQR4KQIKG5L66K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/UserNotifications-DIS7DY6OXB57R23DHXBLK25U7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/AVRouting-92PNL3X22IKAFMQLVCPYMIQ9K.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreVideo-A5ATYP1ZK7VICPMSFKGXA7ITV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/SwiftUI-CBHI0MZNIUEOR34XQZ5WNUNKL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/SwiftUICore-APBS40HDK1I999W1059N2FE1A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/DataDetection-1R83D4N96AS93LE71101T58FW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/QuartzCore-CXDO16S6CCCRHPMK3MX4M1QEW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreMedia-3W2G5Q8DETP3X2NOV8LVFDIVS.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/AVFoundation-6ZM9CPW2Q3OEDQ88UE47GMVTH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/SwiftUICore-1S9RWV0VUS6PWWHBYTW5U5VOI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/MediaToolbox-8ITM4PA06HU0X9W4YJG10IS6Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/CoreImage-AQ0LF8GLUG6ZOUPC7B92VJDTF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/AVFAudio-4N23MT58I39BZC1HEVCEVQ81B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/UIKit-5KK9S2EX128DXE14JF1UI69A6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/AVFoundation-ALRR3WGE4KJM1J1F3F1966CS3.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Speech-7DBP3E15DC00E4GRIGL80CMZQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Speech-25DFKILFJJFIFY3MUUEP4Y4SX.pcm
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ AceBartender (in target 'AceBartender' from project 'AceBartender')
+
+EmitSwiftModule normal x86_64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 Compiling\ Lang.swift,\ Model.swift,\ Net.swift,\ RecipeView.swift,\ Saves.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Lang.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Model.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Net.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/RecipeView.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Saves.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Lang.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Model.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Net.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/RecipeView.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Saves.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/SwiftUI-EJ6NFFAY8HO9ETEY5B5M7IIRN.pcm
+
+SwiftDriverJobDiscovery normal x86_64 Emitting module for AceBartender (in target 'AceBartender' from project 'AceBartender')
+
+SwiftDriver\ Compilation\ Requirements AceBartender normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AceBartender -Onone -enforce-exclusivity\=checked @/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/SDKStatCaches.noindex/iphonesimulator26.2-23C57-dc75598d0054f22ec865fa860f139d72e244bd9a5feaf902f95f61bf06266e52.sdkstatcache -output-file-map /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-generated-files.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-project-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources-normal/x86_64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/x86_64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-Swift.h -working-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ AceBartender (in target 'AceBartender' from project 'AceBartender')
+
+EmitSwiftModule normal arm64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+Copy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/x86_64-apple-ios-simulator.swiftmodule /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftmodule (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftmodule /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/x86_64-apple-ios-simulator.swiftmodule
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for AceBartender (in target 'AceBartender' from project 'AceBartender')
+
+SwiftDriver\ Compilation\ Requirements AceBartender normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AceBartender -Onone -enforce-exclusivity\=checked @/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/SDKStatCaches.noindex/iphonesimulator26.2-23C57-dc75598d0054f22ec865fa860f139d72e244bd9a5feaf902f95f61bf06266e52.sdkstatcache -output-file-map /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-generated-files.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-project-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-Swift.h -working-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/x86_64-apple-ios-simulator.swiftdoc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftdoc (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftdoc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/x86_64-apple-ios-simulator.swiftdoc
+
+SwiftMergeGeneratedHeaders /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/AceBartender-Swift.h /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-Swift.h /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-Swift.h (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-Swift.h -arch x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-Swift.h -o /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/AceBartender-Swift.h
+
+Copy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/x86_64-apple-ios-simulator.abi.json /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.abi.json (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.abi.json /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/x86_64-apple-ios-simulator.abi.json
+
+Copy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftmodule (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftmodule /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftdoc (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftdoc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.abi.json (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.abi.json /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftsourceinfo (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftsourceinfo /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftsourceinfo (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftsourceinfo /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftCompile normal x86_64 Compiling\ App.swift,\ BarView.swift,\ CheckoutView.swift,\ Core.swift,\ Glass.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/App.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/BarView.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/CheckoutView.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Core.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Glass.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/App.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/BarView.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/CheckoutView.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Core.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Glass.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling App.swift, BarView.swift, CheckoutView.swift, Core.swift, Glass.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftCompile normal arm64 Compiling\ Sheets.swift,\ Theme.swift,\ TitleView.swift,\ Voice.swift,\ GeneratedAssetSymbols.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Sheets.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Theme.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/TitleView.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Voice.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Sheets.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Theme.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/TitleView.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Voice.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 Compiling\ App.swift,\ BarView.swift,\ CheckoutView.swift,\ Core.swift,\ Glass.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/App.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/BarView.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/CheckoutView.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Core.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Glass.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/App.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/BarView.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/CheckoutView.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Core.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Glass.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling Lang.swift, Model.swift, Net.swift, RecipeView.swift, Saves.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftCompile normal arm64 Compiling\ Lang.swift,\ Model.swift,\ Net.swift,\ RecipeView.swift,\ Saves.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Lang.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Model.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Net.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/RecipeView.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Saves.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Lang.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Model.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Net.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/RecipeView.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Saves.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling App.swift, BarView.swift, CheckoutView.swift, Core.swift, Glass.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftCompile normal x86_64 Compiling\ Sheets.swift,\ Theme.swift,\ TitleView.swift,\ Voice.swift,\ GeneratedAssetSymbols.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Sheets.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Theme.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/TitleView.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Voice.swift /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Sheets.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Theme.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/TitleView.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Voice.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling Sheets.swift, Theme.swift, TitleView.swift, Voice.swift, GeneratedAssetSymbols.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Lang.swift, Model.swift, Net.swift, RecipeView.swift, Saves.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftDriver\ Compilation AceBartender normal arm64 com.apple.xcode.tools.swift.compiler (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-Swift-Compilation -- /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AceBartender -Onone -enforce-exclusivity\=checked @/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/SDKStatCaches.noindex/iphonesimulator26.2-23C57-dc75598d0054f22ec865fa860f139d72e244bd9a5feaf902f95f61bf06266e52.sdkstatcache -output-file-map /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-generated-files.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-project-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-Swift.h -working-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/AceBartender.debug.dylib normal arm64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -O0 -L/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -filelist /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.LinkFileList -install_name @rpath/AceBartender.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @executable_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.swiftmodule @/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender-linker-args.resp -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/AceBartender.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-ExecutorLinkFileList-normal-arm64.txt (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    construct-stub-executor-link-file-list /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/AceBartender.debug.dylib /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'AceBartender' from project 'AceBartender')
+
+Ld /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/AceBartender normal arm64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -O0 -L/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-ExecutorLinkFileList-normal-arm64.txt /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/AceBartender.debug.dylib -o /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/AceBartender
+
+SwiftDriverJobDiscovery normal x86_64 Compiling Sheets.swift, Theme.swift, TitleView.swift, Voice.swift, GeneratedAssetSymbols.swift (in target 'AceBartender' from project 'AceBartender')
+
+SwiftDriver\ Compilation AceBartender normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-Swift-Compilation -- /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name AceBartender -Onone -enforce-exclusivity\=checked @/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/SDKStatCaches.noindex/iphonesimulator26.2-23C57-dc75598d0054f22ec865fa860f139d72e244bd9a5feaf902f95f61bf06266e52.sdkstatcache -output-file-map /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-generated-files.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-project-headers.hmap -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources-normal/x86_64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources/x86_64 -Xcc -I/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-Swift.h -working-directory /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/AceBartender.debug.dylib normal x86_64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -O0 -L/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -filelist /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.LinkFileList -install_name @rpath/AceBartender.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @executable_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.swiftmodule @/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender-linker-args.resp -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/AceBartender.debug.dylib
+
+CreateUniversalBinary /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/AceBartender.debug.dylib normal arm64\ x86_64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/AceBartender.debug.dylib /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/AceBartender.debug.dylib -output /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/AceBartender.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-ExecutorLinkFileList-normal-x86_64.txt (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    construct-stub-executor-link-file-list /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/AceBartender.debug.dylib /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-ExecutorLinkFileList-normal-x86_64.txt
+note: Using stub executor library with Swift entry point. (in target 'AceBartender' from project 'AceBartender')
+
+Ld /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/AceBartender normal x86_64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios17.0-simulator -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk -O0 -L/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibPath-normal-x86_64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-DebugDylibInstallName-normal-x86_64.txt -Xlinker -filelist -Xlinker /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender-ExecutorLinkFileList-normal-x86_64.txt /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/AceBartender.debug.dylib -o /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/AceBartender
+
+CreateUniversalBinary /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/AceBartender normal arm64\ x86_64 (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/Binary/AceBartender /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/Binary/AceBartender -output /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/AceBartender
+
+LinkAssetCatalog /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Assets.xcassets (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-linkAssetCatalog --thinned /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/thinned --thinned-dependencies /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_generated_info.plist_unthinned --output /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app --plist-output /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/AppIcon76x76@2x~ipad.png (in target 'AceBartender' from project 'AceBartender')
+note: Emplaced /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/AppIcon60x60@2x.png (in target 'AceBartender' from project 'AceBartender')
+note: Emplaced /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Assets.car (in target 'AceBartender' from project 'AceBartender')
+
+ProcessInfoPlistFile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Info.plist /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Info.plist (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-infoPlistUtility /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/App/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/assetcatalog_generated_info.plist -o /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Info.plist
+
+CopySwiftLibs /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/AceBartender.debug.dylib --scan-folder /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Frameworks --scan-folder /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/PlugIns --scan-folder /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/SystemExtensions --scan-folder /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Extensions --platform iphonesimulator --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.3.7003.10.eV7IBq/Metal.xctoolchain --toolchain /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.3.7003.10.eV7IBq/Metal.xctoolchain --module-name AceBartender --sdk-root /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.2.sdk --xcode-version 17C529 --platform-family iOS --deployment-target 17.0 --bundle-identifier com.austin410203.acebartender --output /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app --target-triple arm64-apple-ios17.0-simulator --target-triple x86_64-apple-ios17.0-simulator --binary-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/AceBartender --dependency-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender_dependency_info.dat --dependency-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender_dependency_info.dat --stringsdata-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --stringsdata-file /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.SwiftFileList --source-file-list /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.SwiftFileList --metadata-file-list /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender.DependencyMetadataFileList --static-metadata-file-list /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender.DependencyStaticMetadataFileList --swift-const-vals-list /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/arm64/AceBartender.SwiftConstValuesFileList --swift-const-vals-list /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/Objects-normal/x86_64/AceBartender.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-11-08 02:50:22.207 appintentsmetadataprocessor[6846:24081] Starting appintentsmetadataprocessor export
+2026-11-08 02:50:22.217 appintentsmetadataprocessor[6846:24081] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Info.plist --temp-dir-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/ssu --bundle-id com.austin410203.acebartender --product-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app --extracted-metadata-path /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app/Metadata.appintents --metadata-file-list /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Intermediates.noindex/AceBartender.build/Debug-iphonesimulator/AceBartender.build/AceBartender.DependencyMetadataFileList --archive-ssu-assets
+2026-11-08 02:50:22.270 appintentsnltrainingprocessor[6850:24092] Parsing options for appintentsnltrainingprocessor
+2026-11-08 02:50:22.272 appintentsnltrainingprocessor[6850:24092] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-RegisterExecutionPolicyException /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app
+
+Validate /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    builtin-validationUtility /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app (in target 'AceBartender' from project 'AceBartender')
+    cd /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS
+    /usr/bin/touch -c /Users/runner/work/3D_AceBartender_iOS/3D_AceBartender_iOS/build/Build/Products/Debug-iphonesimulator/AceBartender.app
+
+** BUILD SUCCEEDED **
+
