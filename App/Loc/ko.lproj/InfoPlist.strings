@@ -1,0 +1,5 @@
+CFBundleDisplayName = "에이스 바텐더";
+CFBundleName = "에이스 바텐더";
+NSMicrophoneUsageDescription = "말하기 버튼을 누르는 동안 마이크로 주문을 들어요.";
+NSSpeechRecognitionUsageDescription = "말한 내용을 글자로 바꿔 입력창에 넣어요. 보내기 전에 고칠 수 있어요.";
+NSPhotoLibraryAddUsageDescription = "레시피 카드 이미지를 사진에 저장해요.";

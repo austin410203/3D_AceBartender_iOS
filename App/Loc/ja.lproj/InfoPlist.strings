@@ -1,0 +1,5 @@
+CFBundleDisplayName = "エース・バーテンダー";
+CFBundleName = "エース・バーテンダー";
+NSMicrophoneUsageDescription = "話すボタンを押している間だけマイクで注文を聞き取ります。";
+NSSpeechRecognitionUsageDescription = "話した内容を文字にして入力欄に入れます。送る前に直せます。";
+NSPhotoLibraryAddUsageDescription = "レシピカードの画像を写真に保存します。";

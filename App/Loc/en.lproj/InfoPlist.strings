@@ -1,0 +1,5 @@
+CFBundleDisplayName = "Ace Bartender";
+CFBundleName = "Ace Bartender";
+NSMicrophoneUsageDescription = "The microphone listens while you hold the talk button, so you can order by voice.";
+NSSpeechRecognitionUsageDescription = "Turns what you say into text in the input box so you can edit it before sending.";
+NSPhotoLibraryAddUsageDescription = "Saves recipe card images to your Photos.";

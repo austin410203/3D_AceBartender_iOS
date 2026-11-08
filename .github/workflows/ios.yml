@@ -1,0 +1,225 @@
+# 王牌酒保 native iOS app in the cloud (SwiftUI; rules core App/Data/core.js is built locally from Gaming/AceBartender/public/js by tools/build_core.mjs).
+#  - core: the bundled rules core (App/Data/core.js) runs without a browser in all five languages
+#  - build: build for the simulator, take screenshots → branch native-ci
+#  - store: commit message contains [store] → 6.9-inch App Store screenshots in five languages (same branch, ci-out/store)
+#  - testflight: commit message contains [testflight] (or manual run) → archive with Xcode cloud signing and upload
+# Rule: while the repo is private everything is skipped (no paid macOS minutes). Make it public, run, make it private again.
+name: Native iOS
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      testflight:
+        description: Upload to TestFlight
+        type: boolean
+        default: false
+      store:
+        description: App Store screenshots (6.9-inch, five languages)
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: native-${{ github.ref }}
+  cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  core:
+    if: ${{ !github.event.repository.private }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Core test (no browser, five languages)
+        run: node tools/core_test.mjs
+
+  build:
+    if: ${{ !github.event.repository.private }}
+    runs-on: macos-15
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Xcode 26
+        run: |
+          X=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$X" ]; then sudo xcode-select -s "$X"; fi
+          xcodebuild -version
+      - name: Generate the Xcode project
+        run: |
+          brew install xcodegen
+          xcodegen generate
+      - name: Build for iOS Simulator (unsigned)
+        run: |
+          mkdir -p ci-out
+          set +e
+          xcodebuild -project AceBartender.xcodeproj -scheme AceBartender -configuration Debug -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' -derivedDataPath build CODE_SIGNING_ALLOWED=NO build > ci-out/build.log 2>&1
+          rc=$?
+          set -e
+          grep -E "error:|warning: .*(isolated|Sendable)|BUILD (SUCCEEDED|FAILED)" ci-out/build.log | sort -u | head -150 > ci-out/errors.txt || true
+          cat ci-out/errors.txt
+          exit $rc
+      - name: Screenshots in the simulator
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "
+          import json, sys
+          devs = json.load(sys.stdin)['devices']
+          for rt in sorted(devs, reverse=True):
+              if 'iOS' in rt:
+                  for d in devs[rt]:
+                      if d['name'].startswith('iPhone 1') and 'Pro' in d['name'] and 'Max' not in d['name']:
+                          print(d['udid']); sys.exit()
+          ")
+          echo "device $UDID"
+          xcrun simctl boot "$UDID"
+          xcrun simctl bootstatus "$UDID" -b
+          xcrun simctl install "$UDID" build/Build/Products/Debug-iphonesimulator/AceBartender.app
+          shot() {  # file, scene, lang, wait seconds
+            xcrun simctl launch --terminate-running-process --console-pty "$UDID" com.austin410203.acebartender -shot $2 -lang $3 -offline > "ci-out/$1.log" 2>&1 &
+            sleep $4
+            xcrun simctl io "$UDID" screenshot "ci-out/$1.png" || true
+            xcrun simctl terminate "$UDID" com.austin410203.acebartender || true
+            sleep 1
+          }
+          shot 01_title title zh 14
+          shot 02_age age zh 8
+          shot 03_bar bar zh 10
+          shot 04_served served zh 12
+          shot 05_recipe recipe zh 12
+          shot 06_tweak tweak zh 14
+          shot 07_infusion infusion zh 14
+          shot 08_list list zh 12
+          shot 09_book book zh 12
+          shot 10_cabinet cabinet zh 12
+          shot 11_basics basics zh 10
+          shot 12_pick pick zh 12
+          shot 13_menu menu zh 10
+          shot 14_about about zh 10
+          shot 15_help help zh 10
+          shot 16_checkout checkout zh 14
+          shot 17_night night zh 18
+          for l in en ja ko es; do
+            shot 20_title_$l title $l 12
+            shot 21_served_$l served $l 12
+            shot 22_recipe_$l recipe $l 12
+            shot 23_checkout_$l checkout $l 14
+          done
+          find ~/Library/Logs/DiagnosticReports -name 'AceBartender*' -exec cp {} ci-out/ \; 2>/dev/null || true
+          grep -h "NATIVE" ci-out/*.log | sort | uniq -c | head -60 || true
+          if grep -l "Fatal error\|SIGABRT\|EXC_" ci-out/*.log; then echo "::error::the app crashed"; exit 1; fi
+      - name: App Store screenshots (6.9-inch, five languages) when the commit says [store]
+        if: ${{ contains(github.event.head_commit.message, '[store]') || (github.event_name == 'workflow_dispatch' && inputs.store) }}
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "
+          import json, sys
+          devs = json.load(sys.stdin)['devices']
+          for rt in sorted(devs, reverse=True):
+              if 'iOS' in rt:
+                  for d in devs[rt]:
+                      if d['name'].startswith('iPhone 1') and 'Pro Max' in d['name']:
+                          print(d['udid']); sys.exit()
+          ")
+          echo "store device $UDID"
+          xcrun simctl boot "$UDID"; xcrun simctl bootstatus "$UDID" -b
+          xcrun simctl status_bar "$UDID" override --time 9:41 --batteryState charged --batteryLevel 100 --wifiBars 3 --cellularBars 4 || true
+          xcrun simctl install "$UDID" build/Build/Products/Debug-iphonesimulator/AceBartender.app
+          mkdir -p ci-out/store
+          sshot() {  # lang, scene, wait
+            xcrun simctl launch --terminate-running-process "$UDID" com.austin410203.acebartender -shot $2 -lang $1 -offline > /dev/null 2>&1
+            sleep $3
+            xcrun simctl io "$UDID" screenshot "ci-out/store/$1-$2.png" || true
+            xcrun simctl terminate "$UDID" com.austin410203.acebartender || true
+            sleep 1
+          }
+          for l in zh en ja ko es; do
+            sshot $l title 12; sshot $l served 12; sshot $l recipe 12; sshot $l infusion 14; sshot $l list 12; sshot $l checkout 14
+          done
+          ls ci-out/store | wc -l
+      - name: Publish results to native-ci
+        if: always()
+        run: |
+          mkdir -p ci-out && cd ci-out
+          git init -q -b native-ci
+          git add -A
+          git -c user.name="Empty Office CI" -c user.email=hello@emptyoffice.app commit -qm "run ${{ github.run_number }} ${{ github.sha }}" || true
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" native-ci || echo "::warning::push to native-ci failed"
+
+  testflight:
+    if: ${{ !github.event.repository.private && ((github.event_name == 'workflow_dispatch' && inputs.testflight) || contains(github.event.head_commit.message, '[testflight]')) }}
+    needs: [core, build]
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Xcode 26
+        run: |
+          X=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$X" ]; then sudo xcode-select -s "$X"; fi
+      - name: Project
+        run: brew install xcodegen && xcodegen generate
+      - name: Write App Store Connect key
+        env:
+          ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/keys"
+          K="$RUNNER_TEMP/keys/AuthKey.p8"
+          printf '%s\n' "$ASC_KEY_P8" | tr -d '\r' | sed '/^[[:space:]]*$/d' > "$K"
+          if ! grep -q 'BEGIN PRIVATE KEY' "$K"; then
+            { echo '-----BEGIN PRIVATE KEY-----'; tr -d ' \n' < "$K" | fold -w 64; echo; echo '-----END PRIVATE KEY-----'; } > "$K.tmp" && mv "$K.tmp" "$K"
+          fi
+          openssl pkey -in "$K" -noout || { echo "::error::ASC_KEY_P8 is missing or not a valid private key"; exit 1; }
+      - name: Archive
+        env:
+          TEAM: ${{ secrets.APPLE_TEAM_ID }}
+          KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ISSUER: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          set -o pipefail
+          BN=$((100 + ${{ github.run_number }}))
+          if xcodebuild -project AceBartender.xcodeproj -scheme AceBartender -configuration Release \
+            -destination 'generic/platform=iOS' -archivePath build/AceBartender.xcarchive archive \
+            CURRENT_PROJECT_VERSION=$BN DEVELOPMENT_TEAM="$TEAM" CODE_SIGN_STYLE=Automatic \
+            -allowProvisioningUpdates -authenticationKeyPath "$RUNNER_TEMP/keys/AuthKey.p8" \
+            -authenticationKeyID "$KEY_ID" -authenticationKeyIssuerID "$ISSUER" > archive.log 2>&1; then
+            tail -n 20 archive.log
+          else
+            grep -E "error:" archive.log | head -20
+            echo "::warning::development certificate limit reached; archiving ad-hoc and relying on cloud signing at export"
+            rm -rf build/AceBartender.xcarchive
+            xcodebuild -project AceBartender.xcodeproj -scheme AceBartender -configuration Release \
+              -destination 'generic/platform=iOS' -archivePath build/AceBartender.xcarchive archive \
+              CURRENT_PROJECT_VERSION=$BN DEVELOPMENT_TEAM="$TEAM" CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- \
+              PROVISIONING_PROFILE_SPECIFIER= 2>&1 | tail -n 40
+          fi
+      - name: Export and upload to TestFlight
+        env:
+          TEAM: ${{ secrets.APPLE_TEAM_ID }}
+          KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ISSUER: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          set -o pipefail
+          cat > ExportOptions.plist <<PLIST
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0"><dict>
+            <key>method</key><string>app-store-connect</string>
+            <key>destination</key><string>upload</string>
+            <key>signingStyle</key><string>automatic</string>
+            <key>teamID</key><string>$TEAM</string>
+            <key>manageAppVersionAndBuildNumber</key><false/>
+          </dict></plist>
+          PLIST
+          xcodebuild -exportArchive -archivePath build/AceBartender.xcarchive -exportPath build/export \
+            -exportOptionsPlist ExportOptions.plist -allowProvisioningUpdates \
+            -authenticationKeyPath "$RUNNER_TEMP/keys/AuthKey.p8" \
+            -authenticationKeyID "$KEY_ID" -authenticationKeyIssuerID "$ISSUER" 2>&1 | tail -n 60
+      - name: Remove the API key
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/keys"

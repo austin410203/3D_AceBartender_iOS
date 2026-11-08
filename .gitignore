@@ -1,0 +1,7 @@
+AceBartender.xcodeproj/
+build/
+keys/
+.work/
+node_modules/
+*.p8
+.DS_Store

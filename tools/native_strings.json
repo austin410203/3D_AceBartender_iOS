@@ -1,0 +1,15 @@
+{
+  "時間": { "ja": "時間" },
+  "保存": { "ja": "保存" },
+  "注意": { "ja": "注意" },
+  "內部測試碼": { "en": "Tester code", "ja": "テスターコード", "ko": "테스터 코드", "es": "Código de prueba" },
+  "輸入內部測試碼，Bartender 就會用即時 AI 回話。沒有測試碼也能玩（離線劇本）。": {
+    "en": "Enter the tester code and the bartenders reply with live AI. Without a code you can still play (offline script).",
+    "ja": "テスターコードを入れると、バーテンダーがリアルタイムAIで答えます。コードがなくても遊べます（オフライン台本）。",
+    "ko": "테스터 코드를 입력하면 바텐더가 실시간 AI로 대답해요. 코드가 없어도 플레이할 수 있어요(오프라인 대본).",
+    "es": "Introduce el código de prueba y los bartenders responderán con IA en directo. Sin código también puedes jugar (guion sin conexión)."
+  },
+  "連線": { "en": "Connect", "ja": "接続", "ko": "연결", "es": "Conectar" },
+  "已連上即時 AI 模式": { "en": "Connected: live AI mode", "ja": "リアルタイムAIモードに接続しました", "ko": "실시간 AI 모드에 연결됐어요", "es": "Conectado: modo IA en directo" },
+  "測試碼不對，或現在連不上": { "en": "Wrong code, or the server can't be reached right now", "ja": "コードが違うか、今は接続できません", "ko": "코드가 틀렸거나 지금은 연결할 수 없어요", "es": "Código incorrecto o no se puede conectar ahora" }
+}

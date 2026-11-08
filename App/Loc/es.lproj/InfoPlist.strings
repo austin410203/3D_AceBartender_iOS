@@ -1,0 +1,5 @@
+CFBundleDisplayName = "El As de la Barra";
+CFBundleName = "El As de la Barra";
+NSMicrophoneUsageDescription = "El micrófono escucha mientras mantienes pulsado el botón para pedir con la voz.";
+NSSpeechRecognitionUsageDescription = "Convierte lo que dices en texto en el cuadro de entrada para que lo revises antes de enviarlo.";
+NSPhotoLibraryAddUsageDescription = "Guarda las imágenes de las recetas en tus Fotos.";

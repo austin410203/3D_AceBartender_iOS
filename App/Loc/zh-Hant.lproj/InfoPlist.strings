@@ -1,0 +1,5 @@
+CFBundleDisplayName = "王牌酒保";
+CFBundleName = "王牌酒保";
+NSMicrophoneUsageDescription = "按住說話時用麥克風聽你點酒，放開後文字會進輸入框。";
+NSSpeechRecognitionUsageDescription = "把你說的話轉成文字，放進輸入框讓你改好再送出。";
+NSPhotoLibraryAddUsageDescription = "把酒譜卡圖片存進你的照片。";
