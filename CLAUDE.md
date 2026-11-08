@@ -1,7 +1,7 @@
 # 王牌酒保 Ace Bartender：原生 iOS App
 
 網頁版 `Gaming/AceBartender`（bar.emptyoffice.app）的原生 iOS 版。**介面全是 SwiftUI，不是 WebView**；規則（184 杯酒譜、推薦、離線劇本、五語翻譯、飲酒安全、危機偵測）直接用網頁版的 `public/js`，打包成 `App/Data/core.js` 在 JavaScriptCore 跑，所以兩邊永遠同一份正本。
-老闆 2026-11-08：「做成原生ios app」。私人 repo `austin410203/3D_AceBartender_iOS`，bundle `com.austin410203.acebartender`。
+老闆 2026-11-08：「做成原生ios app」。私人 repo `austin410203/3D_AceBartender_iOS`，bundle `com.austin410203.acebartender`，App Store Connect app **6832145220**（王牌酒保 Ace Bartender，SKU acebartender，zh-Hant）。ASC 金鑰「Ace Bartender」24Y3G8929N（Admin，.p8 在 keys/ 不進 git）；GitHub secrets APPLE_TEAM_ID／ASC_KEY_ID／ASC_ISSUER_ID 已填，ASC_KEY_P8 由老闆貼。
 
 ## 規則先讀
 - 網頁版 `AceBartender/CLAUDE.md`、`docs/SAFETY.md`：推薦、聲音、點酒、安全規則都在那裡，這裡照做。
