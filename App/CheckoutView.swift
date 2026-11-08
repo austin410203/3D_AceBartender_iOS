@@ -108,10 +108,10 @@ struct DrinkCard: View {
           }
         }
         HStack(spacing: 6) {
-          Button(saved ? L("已在酒譜本") : L("存進酒譜本")) { bar.toggleSave(r.id, tweak: r.tweak) }.buttonStyle(Soft(on: saved))
+          Button(saved ? L("已在酒譜本") : L("存進酒譜本")) { bar.toggleSave(r.id, tweak: r.tweak) }.buttonStyle(Soft(on: saved, wide: true)).layoutPriority(1)
           Button(L("分享")) { Share.recipeText(r, bar: bar) }.buttonStyle(Soft())
           Button(L("匯出")) { Share.recipeImage(r, bar: bar) }.buttonStyle(Soft())
-        }.font(.system(size: 13))
+        }
       }
     }
     .padding(12).background(C.paper, in: RoundedRectangle(cornerRadius: 16))

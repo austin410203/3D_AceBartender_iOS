@@ -146,7 +146,7 @@ final class Bar: ObservableObject {
     bubble = text
     bubbleTask?.cancel()
     let concern = m == "concern"
-    bubbleTask = Task { try? await Task.sleep(nanoseconds: fast ? 60_000_000 : 9_000_000_000); if !Task.isCancelled { bubble = nil; if !concern { mood = "smile" } } }
+    bubbleTask = Task { try? await Task.sleep(nanoseconds: fast ? 60_000_000_000 : 9_000_000_000); if !Task.isCancelled { bubble = nil; if !concern { mood = "smile" } } }   // 測試截圖時泡泡留著
     if let b = who { Voice.shared.speak(text, b, lang) }
   }
 

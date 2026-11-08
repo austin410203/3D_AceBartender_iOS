@@ -49,6 +49,7 @@ struct Soft: ButtonStyle {
   func makeBody(configuration: Configuration) -> some View {
     configuration.label
       .font(.system(size: 14, weight: on ? .heavy : .regular))
+      .lineLimit(2).minimumScaleFactor(0.7).multilineTextAlignment(.center)
       .foregroundStyle(on ? Color(hex: "#24170a") : C.ink)
       .frame(maxWidth: wide ? .infinity : nil)
       .padding(.vertical, 9).padding(.horizontal, 12)
